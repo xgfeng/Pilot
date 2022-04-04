@@ -1,4 +1,4 @@
-#include "editor//include/editor.h"
+#include "editor/include/editor.h"
 #include "editor/include/editor_ui.h"
 #include "runtime/engine.h"
 #include "runtime/function/render/include/render/render.h"

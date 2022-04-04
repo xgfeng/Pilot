@@ -26,6 +26,8 @@ set(ENGINE_SCHEMA_DIR "/schema")
 
 if(WIN32)
   add_definitions("/MP")
+  # For VS2017  error LNK2005: "public: static class Pilot::Vector3 const Pilot::PCamera::X" (?X@PCamera@Pilot@@2VVector3@2@B) 已经在 axis.obj 中定义
+  add_link_options("/FORCE:MULTIPLE")  
 endif()
 
 set(vulkan_include ${THIRD_PARTY_DIR}/VulkanSDK/include)
